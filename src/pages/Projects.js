@@ -52,9 +52,9 @@ const Projects = (props) => {
 
   const loaded = () => {
     return projects.map((project) => (
-      <div>
+      <div className="projDiv">
         <h1>{project.name}</h1>
-        <img src={project.image} alt={project.name}/>
+        <img className="projImgs" src={project.image} alt={project.name}/>
         <a href={project.git}>
           <button>Github</button>
         </a>

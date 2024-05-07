@@ -17,7 +17,7 @@ const About = (props) => {
         <h1>{about.name}</h1>
         <img src={about.headshot} alt={about.name} />
         <h3>{about.email}</h3>
-        <p>{about.bio}</p>
+        <p className='aboutBio'>{about.bio}</p>
       </div>
     )
   }
