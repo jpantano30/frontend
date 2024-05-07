@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-
+import './App.css'
 const About = (props) => {
   const [about, setAbout] = useState(null)
   const getAboutData = async () => {
