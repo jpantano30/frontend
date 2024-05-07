@@ -47,7 +47,7 @@ const Projects = (props) => {
     setProjects(data)
   }
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line 
   useEffect(() => {getProjectsData()}, [])
 
   const loaded = () => {
