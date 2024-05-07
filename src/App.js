@@ -9,7 +9,7 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 
 function App() {
-  const URL = 'https://full-stack-portfolio-hw20-4c36ad0a6a9a.herokuapp.com/' || "http://localhost:4000/"
+  const URL = 'https://full-stack-portfolio-hw20-4c36ad0a6a9a.herokuapp.com/'
   return (
     <div className="App">
       <Header />

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+
 const About = (props) => {
   const [about, setAbout] = useState(null)
   const getAboutData = async () => {
@@ -14,6 +15,7 @@ const About = (props) => {
     return (
       <div>
         <h1>{about.name}</h1>
+        <img src={about.headshot} alt={about.name} />
         <h3>{about.email}</h3>
         <p>{about.bio}</p>
       </div>
