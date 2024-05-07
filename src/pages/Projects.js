@@ -51,18 +51,22 @@ const Projects = (props) => {
   useEffect(() => {getProjectsData()}, [])
 
   const loaded = () => {
-    return projects.map((project) => (
-      <div className="projDiv">
-        <h1>{project.name}</h1>
-        <img className="projImgs" src={project.image} alt={project.name}/>
-        <a href={project.git}>
-          <button>Github</button>
-        </a>
-        <a href={project.live}>
-          <button>live site</button>
-        </a>
+    return (
+      <div className="projContainer">
+        {projects.map((project) => (
+          <div className="projDiv">
+            <h1>{project.name}</h1>
+            <img className="projImgs" src={project.image} alt={project.name}/>
+            <a href={project.git}>
+              <button>Github</button>
+            </a>
+            <a href={project.live}>
+              <button>live site</button>
+            </a>
+          </div>
+        ))}
       </div>
-    ))
+    )
   }
 
   return projects ? loaded() : <h1>Loading...</h1>

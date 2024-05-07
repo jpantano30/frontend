@@ -1,6 +1,8 @@
 const Footer = (props) => {
   return (
-    <h1> Footer </h1>
+    <div className="footer">
+      <a className="githubL" href="https://github.com/jpantano30">GitHub</a>
+    </div>
   )
 }
 export default Footer
